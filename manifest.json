@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Re-arrange Scores",
+  "version": "1.0.0",
+  "description": "Re-arranges the professional and progress scores in Microverse Dashboard.",
+  "permissions": [
+    "tabs",
+    "*://dashboard.microverse.org/*",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://dashboard.microverse.org/", 
+        "https://dashboard.microverse.org/dashboard"
+      ],
+      "js": [
+        "re-arrange.js"
+      ]
+    }
+  ]
+}
