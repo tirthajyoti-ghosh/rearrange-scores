@@ -73,7 +73,8 @@
 |:---:|:---:|
 |![image](https://user-images.githubusercontent.com/57726348/87847660-99246d00-c8f7-11ea-91dd-ce2e3880b7a6.png)|![image](https://user-images.githubusercontent.com/57726348/87847680-b8bb9580-c8f7-11ea-9e8e-2bad42b8a658.png)|
 
->Moved below **Daily Schedule**
+>Progress and Professionalism Score moved below **Daily Schedule**
+
 ![image](https://user-images.githubusercontent.com/57726348/87847726-f15b6f00-c8f7-11ea-8a66-13cd2ad0dabe.png)
 
 This is a chrome extension built to re-arrange the professional and progress scores below the Daily Schedule in Microverse Dashboard. It is built to help Microverse students quickly access the "Join Call" button.
@@ -85,7 +86,7 @@ This is a chrome extension built to re-arrange the professional and progress sco
 
 <!-- GETTING STARTED -->
 ## Getting Started
-.
+
 To get a local copy up and running follow these simple example steps.
 
 
