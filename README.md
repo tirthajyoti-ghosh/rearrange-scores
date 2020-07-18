@@ -21,7 +21,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -29,23 +28,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://github.com/othneildrew/Best-README-Template/blob/master/images/logo.png?raw=true" alt="Logo" width="80" height="80">
+  <a href="https://github.com/tirthajyoti-ghosh/rearrange-scores">
+    <img src="https://image.flaticon.com/icons/svg/1634/1634866.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Re-Arrange Scores</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A chrome extension to help Microverse students quickly access the "Join Call" button in their Dashboard.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/tirthajyoti-ghosh/rearrange-scores"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/tirthajyoti-ghosh/rearrange-scores">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/tirthajyoti-ghosh/rearrange-scores/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/tirthajyoti-ghosh/rearrange-scores/issues">Request Feature</a>
   </p>
 </p>
 
@@ -59,7 +58,6 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Usage](#usage)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
@@ -71,72 +69,53 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot](https://github.com/othneildrew/Best-README-Template/blob/master/images/screenshot.png?raw=true)](https://example.com)
+| Before	| After |
+|:---:|:---:|
+|![image](https://user-images.githubusercontent.com/57726348/87847660-99246d00-c8f7-11ea-91dd-ce2e3880b7a6.png)|![image](https://user-images.githubusercontent.com/57726348/87847680-b8bb9580-c8f7-11ea-9e8e-2bad42b8a658.png)|
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
+>Moved below **Daily Schedule**
+![image](https://user-images.githubusercontent.com/57726348/87847726-f15b6f00-c8f7-11ea-8a66-13cd2ad0dabe.png)
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+This is a chrome extension built to re-arrange the professional and progress scores below the Daily Schedule in Microverse Dashboard. It is built to help Microverse students quickly access the "Join Call" button.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
-
-### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
-
+### Built With:
+* ES6
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
+.
 To get a local copy up and running follow these simple example steps.
+
 
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+* First, clone the repository
 ```sh
-npm install npm@latest -g
+git clone https://github.com/tirthajyoti-ghosh/rearrange-scores.git
 ```
+
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-```sh
-git clone https://github.com/your_username_/Project-Name.git
-```
-3. Install NPM packages
-```sh
-npm install
-```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
-```
+1. Got to this URL: [chrome://extensions/](chrome://extensions/)
+2. Turn on `Developer Mode` at the top right corner of your screen.
 
+![image](https://user-images.githubusercontent.com/57726348/87847859-bd347e00-c8f8-11ea-8f6d-8cfa4bdbe554.png)
 
+3. Click on `Load unpacked`
 
-<!-- USAGE EXAMPLES -->
-## Usage
+![image](https://user-images.githubusercontent.com/57726348/87847886-e5bc7800-c8f8-11ea-9942-8a5230f5e327.png)
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
+4. Navigate to the path where you have cloned this repository, select the folder and click `Select Folder`.
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/tirthajyoti-ghosh/rearrange-scores/issues) for a list of proposed features (and known issues).
 
 
 
@@ -163,25 +142,16 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Your Name - [@terrific_ghosh](https://twitter.com/terrific_ghosh) - itirthahere@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/tirthajyoti-ghosh/rearrange-scores](https://github.com/tirthajyoti-ghosh/rearrange-scores)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
+* [Flaticon](https://www.flaticon.com/authors/pixelmeetup)
 
 
 
@@ -189,16 +159,13 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/tirthajyoti-ghosh/rearrange-scores.svg?style=flat-square
+[contributors-url]: https://github.com/tirthajyoti-ghosh/rearrange-scores/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/tirthajyoti-ghosh/rearrange-scores.svg?style=flat-square
+[forks-url]: https://github.com/tirthajyoti-ghosh/rearrange-scores/network/members
+[stars-shield]: https://img.shields.io/github/stars/tirthajyoti-ghosh/rearrange-scores.svg?style=flat-square
+[stars-url]: https://github.com/tirthajyoti-ghosh/rearrange-scores/stargazers
+[issues-shield]: https://img.shields.io/github/issues/tirthajyoti-ghosh/rearrange-scores.svg?style=flat-square
+[issues-url]: https://github.com/tirthajyoti-ghosh/rearrange-scores/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[linkedin-url]: https://www.linkedin.com/in/tirthajyoti-ghosh/
