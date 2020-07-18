@@ -87,12 +87,11 @@ This is a chrome extension built to re-arrange the professional and progress sco
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
 * First, clone the repository
 ```sh
 git clone https://github.com/tirthajyoti-ghosh/rearrange-scores.git
@@ -101,7 +100,7 @@ git clone https://github.com/tirthajyoti-ghosh/rearrange-scores.git
 
 ### Installation
 
-1. Got to this URL: [chrome://extensions/](chrome://extensions/)
+1. Got to this URL: `chrome://extensions/`
 2. Turn on `Developer Mode` at the top right corner of your screen.
 
 ![image](https://user-images.githubusercontent.com/57726348/87847859-bd347e00-c8f8-11ea-8f6d-8cfa4bdbe554.png)
