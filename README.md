@@ -142,7 +142,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@terrific_ghosh](https://twitter.com/terrific_ghosh) - itirthahere@gmail.com
+Tirthajyoti Ghosh - [@terrific_ghosh](https://twitter.com/terrific_ghosh) - itirthahere@gmail.com
 
 Project Link: [https://github.com/tirthajyoti-ghosh/rearrange-scores](https://github.com/tirthajyoti-ghosh/rearrange-scores)
 
