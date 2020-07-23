@@ -32,6 +32,20 @@ class toggleDarkMode {
 
   }
 
+  runDark() {
+    const toggleSwitch = document.querySelector("#checkbox");
+
+    const switchTheme = () => {
+      if (toggleSwitch.checked) {
+        document.documentElement.setAttribute("data-theme", "dark-theme");
+        
+      } else {
+        document.documentElement.setAttribute("data-theme", "light-theme");
+      }
+    }
+
+    toggleSwitch.addEventListener("change", switchTheme, false);
+  }
 }
 
 new toggleDarkmode()
