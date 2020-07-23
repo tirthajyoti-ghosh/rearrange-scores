@@ -12,6 +12,26 @@ class toggleDarkMode {
     this.addDark();
   }
 
+  addDark() {
+    const options = {
+      bottom: '64px',
+      right: 'unset',
+      left: '32px',
+      zIndex: '500'
+    }
+    const dark = new Darkmode(options);
+    dark.showWidget();
+    const wrap = document.createElement('div');
+    wrap.classList.add('toggle');
+    wrap.innerHTML = `<div class='theme-switch-wrapper'>
+                        <label class='theme-switch' for='checkbox'>
+                          <input id='checkbox' type='checkbox'>
+                          <div class='slider round'></div>
+                        </label>
+                      </div>`;
+
+  }
+
 }
 
 new toggleDarkmode()
