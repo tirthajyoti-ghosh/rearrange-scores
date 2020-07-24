@@ -236,7 +236,7 @@ if (IS_BROWSER) {
 }
 /* eslint-enable */
 
-(function toggleDarkMode(window) {
+(function (window) {
   if (typeof window === "undefined") {
     return;
   }
@@ -247,10 +247,27 @@ if (IS_BROWSER) {
     time: '0.5s',
   };
 
-  const img = document.querySelector('.account-user-avatar > img') 
-  img && (img.style.mixBlendMode = 'difference');
+  const img = document.querySelector('.account-user-avatar > img')
 
   const dark = new Darkmode(options);
   dark.showWidget();
 
+  const widget = document.querySelector('.darkmode-toggle');
+  const sideBar = document.querySelector('#left-sidebar');
+  const diff = (el, mode) => el && (el.style.mixBlendMode = mode)
+  
+  const check = () => {
+    if (dark.isActivated()) {
+      widget.innerHTML = '<img src="https://img.icons8.com/color/30/000000/sun.png"/>';
+      diff(img, 'difference');
+      diff(sideBar, 'difference');
+    } else {
+      widget && (widget.innerHTML = '<img src="https://img.icons8.com/plasticine/30/000000/crescent-moon.png"/>');
+      diff(img, '');
+      diff(sideBar, '');
+    }
+  };
+  check();
+
+  widget.addEventListener('click', check);
 })(window);
