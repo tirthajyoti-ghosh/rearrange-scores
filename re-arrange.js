@@ -3,7 +3,7 @@ const rearrangeScores = () => {
   if (!weeklyProgress) {
     return;
   }
-  
+
   const progressScore = weeklyProgress.nextElementSibling;
 
   const weeklyProfessionalism = document.getElementById('dashboard-weekly-professionalism');

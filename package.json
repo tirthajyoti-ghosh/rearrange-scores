@@ -1,0 +1,25 @@
+{
+  "name": "rearrange-scores",
+  "version": "1.0.0",
+  "description": "<!--\r *** Thanks for checking out this README Template. If you have a suggestion that would\r *** make this better, please fork the repo and create a pull request or simply open\r *** an issue with the tag \"enhancement\".\r *** Thanks again! Now go create something AMAZING! :D\r -->",
+  "main": "darkmode.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikenath223/rearrange-scores.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikenath223/rearrange-scores/issues"
+  },
+  "homepage": "https://github.com/mikenath223/rearrange-scores#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
+  }
+}

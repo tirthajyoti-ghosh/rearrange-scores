@@ -30,7 +30,7 @@ class Darkmode {
         pointer-events: none;
         background: ${options.mixColor};
         transition: all ${options.time} ease;
-        mix-blend-mode: difference;
+        mix-blend-mode: exclusion;
       }
 
       .darkmode-layer--button {
@@ -236,8 +236,8 @@ if (IS_BROWSER) {
 }
 /* eslint-enable */
 
-(function (window) {
-  if (typeof window === "undefined") {
+const runDark = (window) => {
+  if (typeof window === 'undefined') {
     return;
   }
 
@@ -247,22 +247,24 @@ if (IS_BROWSER) {
     time: '0.5s',
   };
 
-  const img = document.querySelector('.account-user-avatar > img')
+  const img = document.querySelector('.account-user-avatar > img');
 
   const dark = new Darkmode(options);
   dark.showWidget();
 
   const widget = document.querySelector('.darkmode-toggle');
   const sideBar = document.querySelector('#left-sidebar');
-  const diff = (el, mode) => el && (el.style.mixBlendMode = mode)
-  
+  const diff = (el, mode) => {
+    if (el) el.style.mixBlendMode = mode;
+  };
+
   const check = () => {
     if (dark.isActivated()) {
       widget.innerHTML = '<img src="https://img.icons8.com/color/30/000000/sun.png"/>';
       diff(img, 'difference');
       diff(sideBar, 'difference');
     } else {
-      widget && (widget.innerHTML = '<img src="https://img.icons8.com/plasticine/30/000000/crescent-moon.png"/>');
+      if (widget) widget.innerHTML = '<img src="https://img.icons8.com/plasticine/30/000000/crescent-moon.png"/>';
       diff(img, '');
       diff(sideBar, '');
     }
@@ -270,4 +272,6 @@ if (IS_BROWSER) {
   check();
 
   widget.addEventListener('click', check);
-})(window);
+};
+
+runDark(window);
