@@ -1,5 +1,9 @@
 const rearrangeScores = () => {
   const weeklyProgress = document.getElementById('dashboard-weekly-progress');
+  if (!weeklyProgress) {
+    return;
+  }
+  
   const progressScore = weeklyProgress.nextElementSibling;
 
   const weeklyProfessionalism = document.getElementById('dashboard-weekly-professionalism');

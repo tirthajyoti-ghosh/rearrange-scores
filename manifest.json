@@ -11,11 +11,11 @@
   "content_scripts": [
     {
       "matches": [
-        "https://dashboard.microverse.org/", 
-        "https://dashboard.microverse.org/dashboard"
+        "*://dashboard.microverse.org/*"
       ],
       "js": [
-        "re-arrange.js"
+        "re-arrange.js",
+        "darkmode.js"
       ]
     }
   ]
