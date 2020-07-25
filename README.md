@@ -118,6 +118,9 @@ git clone https://github.com/tirthajyoti-ghosh/rearrange-scores.git
 See the [open issues](https://github.com/tirthajyoti-ghosh/rearrange-scores/issues) for a list of proposed features (and known issues).
 
 
+## Contributors
+
+[Michgolden Ukeje](https://github.com/mikenath223)
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -150,6 +153,7 @@ Project Link: [https://github.com/tirthajyoti-ghosh/rearrange-scores](https://gi
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
+
 * [Img Shields](https://shields.io)
 * [Flaticon](https://www.flaticon.com/authors/pixelmeetup)
 
