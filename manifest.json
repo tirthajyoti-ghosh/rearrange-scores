@@ -15,7 +15,8 @@
       ],
       "js": [
         "re-arrange.js",
-        "darkmode.js"
+        "darkmode.js",
+        "search-challenges.js"
       ]
     }
   ]
