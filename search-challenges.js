@@ -1,4 +1,4 @@
-const searchChallenges = () => { 
+const searchChallenges = () => {
   const codingChallenges = document.getElementById('algorithms_session_coding_challenge_id');
 
   if (!codingChallenges) {
@@ -9,12 +9,12 @@ const searchChallenges = () => {
 
   const codingChallengesArray = [];
 
-  for (let i = 0; i < codingChallengesList.length; i+=1) {
+  for (let i = 0; i < codingChallengesList.length; i += 1) {
     codingChallengesArray.push(codingChallengesList[i].innerText);
   }
 
   function searchChallenges(query) {
-    for (var j = 0; j < codingChallengesArray.length; j+=1) {
+    for (let j = 0; j < codingChallengesArray.length; j += 1) {
       if (codingChallengesArray[j].match(query)) return j;
     }
     return -1;
@@ -24,25 +24,25 @@ const searchChallenges = () => {
     return new RegExp(string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
   }
 
-  // codingChallengesList[searchChallenges(sanitizeQuery("Find"))].setAttribute('selected', '');
-
-
-
-  function inputHandler(e) {
-    console.log(e.target.value);
+  function selectCodingChallenge(query) {
+    codingChallengesList[searchChallenges(sanitizeQuery(query))].setAttribute('selected', '');
   }
 
-  const createInput = () => {
+  function inputHandler(e) {
+    selectCodingChallenge(e.target.value);
+  }
+
+  function createInput() {
     const input = document.createElement('input');
 
     input.setAttribute('type', 'text');
 
     input.setAttribute('class', 'form-control mb-3');
 
-    input.setAttribute('placeholder', 'Start typing the name of the coding challenge...');
-    
+    input.setAttribute('placeholder', '[CASE SENSITIVE] Start typing the name of the coding challenge...');
+
     return input;
-  };
+  }
 
   const container = document.querySelector('#new_algorithms_session > div.bg-white.pt-3.pb-3.without-button > div:nth-child(10)');
 
