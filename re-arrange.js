@@ -17,7 +17,7 @@ const rearrangeScores = () => {
   };
 
   const insertElements = () => {
-    const container = document.querySelector('#app > div > main > div > div > div');
+    const container = document.querySelector('#app > div > main > div > div');
 
     const calender = document.getElementById('dashboard-calendar');
 
