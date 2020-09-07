@@ -1,45 +1,51 @@
-const codingChallenges = document.getElementById('algorithms_session_coding_challenge_id');
-const codingChallengesList = codingChallenges.options;
+const searchChallenges = () => { 
+  const codingChallenges = document.getElementById('algorithms_session_coding_challenge_id');
+  const codingChallengesList = codingChallenges.options;
 
-const codingChallengesArray = [];
+  const codingChallengesArray = [];
 
-for (let i = 0; i < codingChallengesList.length; i+=1) {
-  codingChallengesArray.push(codingChallengesList[i].innerText);
-}
-
-function searchChallenges(query) {
-  for (var j = 0; j < codingChallengesArray.length; j+=1) {
-    if (codingChallengesArray[j].match(query)) return j;
+  for (let i = 0; i < codingChallengesList.length; i+=1) {
+    codingChallengesArray.push(codingChallengesList[i].innerText);
   }
-  return -1;
-}
 
-function sanitizeQuery(string) {
-  return new RegExp(string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-}
+  function searchChallenges(query) {
+    for (var j = 0; j < codingChallengesArray.length; j+=1) {
+      if (codingChallengesArray[j].match(query)) return j;
+    }
+    return -1;
+  }
 
-// codingChallengesList[searchChallenges(sanitizeQuery("Find"))].setAttribute('selected', '');
+  function sanitizeQuery(string) {
+    return new RegExp(string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  }
 
-function inputHandler(e) {
-  console.log(e.target.value);
-}
+  // codingChallengesList[searchChallenges(sanitizeQuery("Find"))].setAttribute('selected', '');
 
-const createInput = () => {
-  const input = document.createElement('input');
 
-  input.setAttribute('type', 'text');
 
-  input.setAttribute('class', 'form-control mb-3');
+  function inputHandler(e) {
+    console.log(e.target.value);
+  }
 
-  input.setAttribute('placeholder', 'Start typing the name of the coding challenge...');
-  
-  return input;
+  const createInput = () => {
+    const input = document.createElement('input');
+
+    input.setAttribute('type', 'text');
+
+    input.setAttribute('class', 'form-control mb-3');
+
+    input.setAttribute('placeholder', 'Start typing the name of the coding challenge...');
+    
+    return input;
+  };
+
+  const container = document.querySelector('#new_algorithms_session > div.bg-white.pt-3.pb-3.without-button > div:nth-child(10)');
+
+  const queryInput = createInput();
+
+  queryInput.addEventListener('input', inputHandler);
+
+  container.insertBefore(queryInput, codingChallenges);
 };
 
-const container = document.querySelector('#new_algorithms_session > div.bg-white.pt-3.pb-3.without-button > div:nth-child(10)');
-
-const queryInput = createInput();
-
-queryInput.addEventListener('input', inputHandler);
-
-container.insertBefore(queryInput, codingChallenges);
+searchChallenges();
