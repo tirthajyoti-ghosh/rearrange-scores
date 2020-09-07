@@ -6,7 +6,7 @@ for (let i = 0; i < codingChallengesList.length; i+=1) {
   codingChallengesArray.push(codingChallengesList[i].innerText);
 }
 
-function searchChallenges (query) {
+function searchChallenges(query) {
   for (var j = 0; j < codingChallengesArray.length; j+=1) {
     if (codingChallengesArray[j].match(query)) return j;
   }
@@ -14,7 +14,7 @@ function searchChallenges (query) {
 }
 
 function sanitizeQuery(string) {
-  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
 }
 
-console.log(sanitizeQuery("Picking Numbers (HackerRank)"));
+codingChallengesList[searchChallenges(sanitizeQuery("Library"))].setAttribute('selected', '');
