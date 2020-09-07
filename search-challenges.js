@@ -1,5 +1,10 @@
 const searchChallenges = () => { 
   const codingChallenges = document.getElementById('algorithms_session_coding_challenge_id');
+
+  if (!codingChallenges) {
+    return;
+  }
+
   const codingChallengesList = codingChallenges.options;
 
   const codingChallengesArray = [];
