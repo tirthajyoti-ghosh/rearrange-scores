@@ -18,7 +18,11 @@ function sanitizeQuery(string) {
   return new RegExp(string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
 }
 
-codingChallengesList[searchChallenges(sanitizeQuery("Find"))].setAttribute('selected', '');
+// codingChallengesList[searchChallenges(sanitizeQuery("Find"))].setAttribute('selected', '');
+
+function inputHandler(e) {
+  console.log(e.target.value);
+}
 
 const createInput = () => {
   const input = document.createElement('input');
@@ -34,4 +38,8 @@ const createInput = () => {
 
 const container = document.querySelector('#new_algorithms_session > div.bg-white.pt-3.pb-3.without-button > div:nth-child(10)');
 
-container.insertBefore(createInput(), codingChallenges);
+const queryInput = createInput();
+
+queryInput.addEventListener('input', inputHandler);
+
+container.insertBefore(queryInput, codingChallenges);
