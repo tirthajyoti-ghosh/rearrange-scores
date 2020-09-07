@@ -13,4 +13,8 @@ function searchChallenges (query) {
   return -1;
 }
 
-console.log(searchChallenges(/Picking Numbers \(HackerRank\)/));
+function sanitizeQuery(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+console.log(sanitizeQuery("Picking Numbers (HackerRank)"));
